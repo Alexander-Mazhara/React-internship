@@ -1,71 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style/style.css" />
-    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>React-internship Onix</title>
   </head>
+
   <body>
+    <!-- main-container-start -->
     <div class="main-container">
-      <div class="project-conteiner-header">
-        <h1>My project Onix</h1>
+      <!-- project-container-header-nav-start -->
+      <div class="project-container-header-nav">
+        <div class="project-container-header-logo">
+          <img src="img/logo-react.png" alt="" />
+        </div>
+        <div class="project-container-header-menu">
+          <a href="#footer"><span class="header-menu-list"> author </span></a>
+          <a href="#html-css"><span class="header-menu-list"> html </span></a>
+          <a href="#html-css"><span class="header-menu-list"> css </span></a>
+          <a href="#git"><span class="header-menu-list"> git </span></a>
+        </div>
       </div>
-      <div class="project-conteiner-discript">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-        veritatis consequuntur ad rerum incidunt totam assumenda nobis
-        dignissimos obcaecati animi quia pariatur adipisci aliquam consectetur
-        tempora autem dolore, nostrum vel sequi magni dolores molestiae
-        reprehenderit. Nisi repellendus recusandae expedita commodi voluptatibus
-        ducimus inventore. Tempore consequuntur necessitatibus error, nostrum
-        tenetur vel nemo quo optio est unde? Incidunt animi delectus nesciunt
-        itaque, sint quos reiciendis eaque commodi voluptates assumenda, qui
-        repellat dolore cupiditate labore provident? Ad earum deserunt, quia
-        unde vel quisquam dolore nesciunt eligendi deleniti excepturi dicta at
-        veritatis veniam aperiam laudantium facilis tempora sunt mollitia nobis
-        nihil optio aut sequi eum libero.
-      </div>
-      <hr />
-      <div class="project-conteiner-main-content">
-        <p>
-          Система контроля версий (Version Control System, VCS) представляет
-          собой программное обеспечение, которое позволяет отслеживать изменения
-          в документах, при необходимости производить их откат, определять, кто
-          и когда внес исправления и т.п.
-        </p>
-        <p>
-          Git – распределенная система контроля версий, разработанная Линусом
-          Торвальдсем для работы над ядром операционной системы Linux. Среди
-          крупных проектов, в рамках которых используется git, можно выделить
-          ядро Linux, Qt, Android. Git свободен и распространяется под лицензией
-          GNU GPL 2 и, также как Mercurial, доступен практически на всех
-          операционных системах.
-        </p>
-        <p>
-          Архитектура трех деревьев Система контроля версий git имеет
-          архитектуру трех деревьев. Перед тем как перейти к ее описанию, для
-          начала, рассмотрим архитектуру двух деревьев. Схематично она выглядит
-          так, как представлено на рисунке ниже.
-        </p>
-        <img src="img/git-commit.png" alt="" />
-        <p>
-          Репозиторий – это хранилище для нашего проекта, которое обслуживает
-          система контроля версий. Сама операция отправки изменений называется
-          commit, на русском языке ее так и называют – коммит. Если нам
-          необходимо взять данные из репозитория, то мы осуществляем операцию
-          checkout, которая на русском произносится как чекаут. Для названий
-          операций commit и checkout не используют прямой перевод, предпочитают
-          транскрипцию.
-        </p>
-        <p>
-          $ git checkout [имя ветки] Переключается на выбранную ветку и
-          обновляет рабочую директорию до её состояния <br />
-          $ git push [удалённый репозиторий] [ветка] Загружает все изменения
-          локальной ветки в удалённый репозиторий <br />
-          $ git pull Загружает историю из удалённого репозитория и объединяет её
-          с локальной. pull = fetch + merge
+      <!-- project-container-header-nav-end -->
+
+      <!-- project-container-discript-start -->
+      <div class="project-container-discript">
+        <h1>My first project to react</h1>
+        <p class="project-container-discript-p">
+          React JavaScript - библиотека для создания пользовательских
+          интерфейсов
         </p>
       </div>
+      <!-- project-container-discript-end -->
+
+      <!-- project-container-main-content-start -->
+      <div class="project-container-main-content">
+        <h2 class="project-container-main-content-header">web technology</h2>
+
+        <!-- post content-row start -->
+        <div class="project-container-post-row" id="html-css">
+          <div class="project-container-posts-row">
+            <img src="img/icon-html.png" alt="" />
+            <h3 class="project-container-posts-header">HTML</h3>
+            <p class="project-container-posts-discr">
+              HyperText Markup Language — «язык гипертекстовой разметки») —
+              самый базовый строительный блок Веба.
+            </p>
+          </div>
+
+          <div class="project-container-posts-row">
+            <img src="img/icon-css.png" alt="" />
+            <h3 class="project-container-posts-header">CSS</h3>
+            <p class="project-container-posts-discr">
+              CSS – это формальный язык, служащий для описания оформления
+              внешнего вида документа, созданного с использованием языка
+              разметки (HTML, XHTML, XML).
+            </p>
+          </div>
+
+          <div class="project-container-posts-row">
+            <img src="img/icon-nodejs.png" alt="" />
+            <h3 class="project-container-posts-header">Node JS</h3>
+            <p class="project-container-posts-discr">
+              NodeJS - это платформа для разработки на языке программирования
+              Javascript, как бэкенд, так и фронтенд части. NodeJS использует
+              движок V8.
+            </p>
+          </div>
+        </div>
+        <!-- post content-row end -->
+
+        <!-- post content-col start -->
+        <div class="project-container-post-col">
+          <h2 class="project-container-main-content-header">web technology</h2>
+
+          <div class="project-container-posts-col" id="git">
+            <!-- <img src="img/git-commit.png" alt="" width="200px" /> -->
+            <p>
+              Система контроля версий (Version Control System, VCS) представляет
+              собой программное обеспечение, которое позволяет отслеживать
+              изменения в документах, при необходимости производить их откат,
+              определять, кто и когда внес исправления и т.п.
+            </p>
+            <p>
+              Git – распределенная система контроля версий, разработанная
+              Линусом Торвальдсем для работы над ядром операционной системы
+              Linux. Среди крупных проектов, в рамках которых используется git,
+              можно выделить ядро Linux, Qt, Android. Git свободен и
+              распространяется под лицензией GNU GPL 2 и, также как Mercurial,
+              доступен практически на всех операционных системах.
+            </p>
+            <p>
+              Архитектура трех деревьев Система контроля версий git имеет
+              архитектуру трех деревьев. Перед тем как перейти к ее описанию,
+              для начала, рассмотрим архитектуру двух деревьев. Схематично она
+              выглядит так, как представлено на рисунке ниже.
+            </p>
+          </div>
+
+          <div class="project-container-posts-col">
+            <!-- <img src="img/git-commit.png" alt="" width="200px" /> -->
+            <p>
+              Репозиторий – это хранилище для нашего проекта, которое
+              обслуживает система контроля версий. Сама операция отправки
+              изменений называется commit, на русском языке ее так и называют –
+              коммит. Если нам необходимо взять данные из репозитория, то мы
+              осуществляем операцию checkout, которая на русском произносится
+              как чекаут. Для названий операций commit и checkout не используют
+              прямой перевод, предпочитают транскрипцию.
+            </p>
+            <p>
+              $ git checkout [имя ветки] Переключается на выбранную ветку и
+              обновляет рабочую директорию до её состояния <br />
+              $ git push [удалённый репозиторий] [ветка] Загружает все изменения
+              локальной ветки в удалённый репозиторий <br />
+              $ git pull Загружает историю из удалённого репозитория и
+              объединяет её с локальной. pull = fetch + merge
+            </p>
+            <p>
+              NodeJS - это платформа для разработки на языке программирования
+              Javascript, как бэкенд, так и фронтенд части. NodeJS использует
+              движок V8.
+            </p>
+          </div>
+          <div class="project-container-posts-col">
+            <!-- <img src="img/git-commit.png" alt="" width="200px" /> -->
+            <p>
+              NPM - это менеджер пакетов, которые вы можете подключить в ваш
+              проект. Например, если вы хотите, чтобы ваш проект использовал
+              Bootstrap, вам необязательно вручную копировать все необходимые
+              файлы с сайта Bootstrap и хранить эту библиотеку в репозитории
+              GIT, достаточно указать в конфигурационном файле вашего проекта
+              одной строчкой, что вам нужен Bootstrap и пакетный менеджер npm
+              установит Bootstrap в копию вашего проекта, при этом нет нужны
+              хранить все подобные библиотеки в репозитории GIT вашего проекта.
+            </p>
+            <p>
+              С помощью менеджера npm можно добавить в ваш проект огромное
+              количество всевозможных библиотек и инструментов и в следующих
+              уроках я покажу как установить NodeJS и пользоваться менеджером
+              пакетов npm, а также покажу как создаются современные frontend
+              приложения.
+            </p>
+          </div>
+        </div>
+        <!-- post content-col end -->
+      </div>
+      <!-- project-container-main-content-end -->
+      <footer class="footer" id="footer">
+        <div class="author">
+          <img src="" alt="" />
+          <p>Alexander Mazhara</p>
+          <p>
+            <a class="link-footer" href="https://github.com/Alexander-Mazhara/"
+              >github</a
+            >
+          </p>
+          <p>
+            <a
+              class="link-footer"
+              href="https://camouf.ru/designes/ready-psd-layouts-for-saito/7836.html"
+              >Оригинал дизайна страницы</a
+            >
+          </p>
+        </div>
+      </footer>
     </div>
+    <!-- main-container-end -->
   </body>
 </html>
