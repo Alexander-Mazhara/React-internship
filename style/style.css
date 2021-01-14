@@ -131,7 +131,7 @@ a {
 }
 
 .link-footer:link {
-  color: #726c6c;
+  color: #ffffff;
 }
 
 .link-footer:visited {
@@ -145,5 +145,5 @@ a:hover,
 
 .link-footer:active {
   background: bisque;
-  color: #cdfeaa;
+  color: #ffffff;
 }
