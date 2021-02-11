@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 450px;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
-
   padding-top: 5px;
   font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
@@ -12,16 +18,18 @@
 /* header menu start */
 .project-container-header-nav {
   height: 123px;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   position: absolute;
   z-index: 2;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .project-container-header-logo {
-  width: 540px;
   margin-left: 20px;
   display: flex;
   align-items: center;
@@ -31,12 +39,12 @@
 }
 
 .project-container-header-menu {
-  width: 500px;
+  max-width: 500px;
   font-size: 20px;
-  padding-left: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding-right: 5%;
 }
 
 .header-menu-list {
@@ -46,7 +54,7 @@
 
 .project-container-discript {
   height: 785px;
-  width: 1200px;
+  max-width: 1200px;
   background-image: url(../img/bgheader.png);
   color: rgb(255, 255, 255);
   text-align: center;
@@ -66,17 +74,12 @@ h1 {
   height: 440px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  padding: 10px;
-}
-
-.project-container-post-row {
-  display: flex;
-  justify-content: space-around;
-  height: 520px;
+  padding: 20px;
+  margin: auto;
 }
 
 .project-container-posts-row > img {
-  width: 255px;
+  width: 200px;
 }
 
 .project-container-main-content-header {
@@ -87,12 +90,11 @@ h1 {
 
 .project-container-post-col {
   background-color: #ccffff;
-  height: 800px;
   padding: 10px;
 }
 
 .project-container-posts-col {
-  height: 200px;
+  min-height: 200px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-color: #fff;
   padding: 20px;
@@ -136,4 +138,8 @@ a:hover,
 .link-footer:active {
   background: bisque;
   color: #ffffff;
+}
+
+.container {
+  padding-bottom: 20px;
 }

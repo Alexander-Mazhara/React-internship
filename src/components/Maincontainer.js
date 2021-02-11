@@ -1,13 +1,19 @@
 import React from "react";
 
 import "./maincontainer.css";
+import logo from "../img/logo-react.png";
+import html from "../img/icon-html.png";
+import css from "../img/icon-css.png";
+import js from "../img/icon-nodejs.png";
+
+const author = "Alexander Mazhara";
 
 function Maincontainer() {
   return (
     <div className="main-container">
       <div className="project-container-header-nav">
         <div className="project-container-header-logo">
-          <img src="../img/logo-react.png" alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className="project-container-header-menu">
           <a href="#footer">
@@ -38,34 +44,43 @@ function Maincontainer() {
           web technology
         </h2>
 
-        <div className="project-container-post-row" id="html-css">
-          <div className="project-container-posts-row">
-            <img src="../img/icon-html.png" alt="" />
-            <h3 className="project-container-posts-header">HTML</h3>
-            <p className="project-container-posts-discr">
-              HyperText Markup Language — «язык гипертекстовой разметки» — самый
-              базовый строительный блок Веба.
-            </p>
-          </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
+              <div className="project-container-post-row" id="html-css">
+                <div className="project-container-posts-row">
+                  <img src={html} alt="" />
+                  <h3 className="project-container-posts-header">HTML</h3>
+                  <p className="project-container-posts-discr">
+                    HyperText Markup Language — «язык гипертекстовой разметки» —
+                    самый базовый строительный блок Веба.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div className="project-container-posts-row">
-            <img src="./" alt="" />
-            <h3 className="project-container-posts-header">CSS</h3>
-            <p className="project-container-posts-discr">
-              CSS – это формальный язык, служащий для описания оформления
-              внешнего вида документа, созданного с использованием языка
-              разметки (HTML, XHTML, XML).
-            </p>
-          </div>
-
-          <div className="project-container-posts-row">
-            <img src="../img/icon-nodejs.png" alt="" />
-            <h3 className="project-container-posts-header">Node JS</h3>
-            <p className="project-container-posts-discr">
-              NodeJS - это платформа для разработки на языке программирования
-              Javascript, как бэкенд, так и фронтенд части. NodeJS использует
-              движок V8.
-            </p>
+            <div className="col-sm">
+              <div className="project-container-posts-row">
+                <img src={css} alt="" />
+                <h3 className="project-container-posts-header">CSS</h3>
+                <p className="project-container-posts-discr">
+                  CSS – это формальный язык, служащий для описания оформления
+                  внешнего вида документа, созданного с использованием языка
+                  разметки (HTML, XHTML, XML).
+                </p>
+              </div>
+            </div>
+            <div className="col-sm">
+              <div className="project-container-posts-row">
+                <img src={js} alt="" />
+                <h3 className="project-container-posts-header">Node JS</h3>
+                <p className="project-container-posts-discr">
+                  NodeJS - это платформа для разработки на языке
+                  программирования Javascript, как бэкенд, так и фронтенд части.
+                  NodeJS использует движок V8.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -146,7 +161,7 @@ function Maincontainer() {
       <footer className="footer" id="footer">
         <div className="author">
           <img src="" alt="" />
-          <p>Alexander Mazhara</p>
+          <p>{author}</p>
           <p>
             <a
               className="link-footer"
